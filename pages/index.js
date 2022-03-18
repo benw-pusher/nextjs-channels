@@ -12,9 +12,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
+           <button id ="trigger" type="button" >
+           <a onClick={(e) => triggerEvent()}>trigger</a></button>
         </h1>
 
         <p className={styles.description}>

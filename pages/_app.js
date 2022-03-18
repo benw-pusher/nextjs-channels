@@ -27,6 +27,10 @@ function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />
 }
 
+function triggerEvent() {
+  console.log("trigger")
+}
+
 
 
 
