@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link'
+
 
 export default function Home() {
 
@@ -20,12 +20,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
-      <Link href="/api/triggerEvent">
-      <a>trigger</a>
-      </Link>
-
-      <button onClick={trigger}>TRIGGER</button>
+      <h1 className={styles.title}>
+          Welcome to <a href="Pusher.com">Pusher</a>
+        </h1>
+      <div className={styles.grid}>
+      <button onClick={trigger}>TRIGGER EVENT</button>
+      </div>
       </main>
 
       <footer className={styles.footer}>
