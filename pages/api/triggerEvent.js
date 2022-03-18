@@ -4,7 +4,7 @@ const pusher = new Pusher({
   appId: process.env.NEXT_PUBLIC_APP_ID,
   key: process.env.NEXT_PUBLIC_APP_KEY,
   secret: process.env.NEXT_PUBLIC_APP_SECRET,
-  cluster: process.env.cluster,
+  cluster: process.env.NEXT_PUBLIC_APP_CLUSTER,
   useTLS: true
 });
 
