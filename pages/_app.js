@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       authEndpoint: '/api/auth',
       cluster: process.env.NEXT_PUBLIC_APP_CLUSTER
     });
+  
 
 
 
