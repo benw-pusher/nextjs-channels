@@ -10,6 +10,8 @@ function MyApp({ Component, pageProps }) {
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
 
+
+
     const pusher = new Pusher(process.env.NEXT_PUBLIC_APP_KEY, {
       authEndpoint: '/api/auth',
       cluster: process.env.NEXT_PUBLIC_APP_CLUSTER

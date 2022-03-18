@@ -17,9 +17,11 @@ module.exports = (req, res) => {
 
   pusher.trigger(channel, event, stringData).then( response => {
       console.log(response)
-      res.send(200)
-    }).catch( error =>
-     console.log(error));
-     res.send(504)
+      res.send(`200`)
+    }).catch( error => {
+     console.log(error)
+     res.send(`504`)
+   });
+
 
   }
