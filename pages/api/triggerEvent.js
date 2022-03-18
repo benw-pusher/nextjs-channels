@@ -13,7 +13,7 @@ module.exports = (req, res) => {
   const channel = 'private-my-channel'
   const event = 'my-event'
 
-  const stringData = "{'name':'abc'}"
+  const stringData = "{'event':'received'}"
 
   pusher.trigger(channel, event, stringData).then( response => {
       console.log(response)
