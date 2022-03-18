@@ -11,11 +11,15 @@ function MyApp({ Component, pageProps }) {
     Pusher.logToConsole = true;
 
 
-
+    const pusher = new Pusher('aae2d2f9e6404d23f0d6', {
+          authEndpoint: '/api/auth',
+          cluster: 'eu'
+        });
+        /*
     const pusher = new Pusher(process.env.NEXT_PUBLIC_APP_KEY, {
       authEndpoint: '/api/auth',
       cluster: process.env.NEXT_PUBLIC_APP_CLUSTER
-    }); 
+    }); */
 
 
 
